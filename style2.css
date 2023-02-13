@@ -1,0 +1,119 @@
+.game {
+  /*background-color: blue;*/
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+   width: 400px;
+   height: 50px;
+   border-bottom: 1px solid #000;
+   margin: auto;
+}
+#littletruck {
+   width: 55px;
+   height: 26px;
+   background-image: url(assets/img/littleTruck.png);
+   background-size: 55px 22px;
+   background-repeat: no-repeat;
+   position: relative;
+   top: 28px;/**/
+  /* left: 97px;*/
+  margin: 0px 5px 0px 5px;
+
+}
+#dino {
+   width: 80px;
+   height: 25px;
+   background-image: url(assets/img/fura.png);
+   background-size: 80px 25px;
+   position: relative;
+   top: 26px;
+   /* left: 165px;*/
+   background-repeat: no-repeat;
+   margin: 0px 5px 0px 5px;
+}
+#car {
+   width: 40px;
+   height: 22px;
+   background-image: url(assets/img/car.png);
+   background-size: 40px 22px;
+   background-repeat: no-repeat;
+   position: relative;
+   /*left: 37px;*/
+   top: 30px;
+   margin: 0px 5px 0px 5px;
+}
+#motorcicle {
+   width: 25px;
+   height: 13px;
+   background-image: url(assets/img/motorcicle.png);
+   background-size: 25px 13px;
+   background-repeat: no-repeat;
+   position: relative;
+   margin: 0px 5px 0px 0px;
+   top: 37px;/**/
+}
+#cactus {
+   /*background-color: blue;*/
+   background-repeat: no-repeat;
+   width: 37px;
+   height: 40px;
+   background-image: url(assets/img/tree2.png);
+   background-size: 37px 40px;
+   position: relative;
+   top: 11px;
+   left: 70px;/**/
+   margin: 0px 5px 0px 5px;
+   animation: cactusMov 6s infinite linear; 
+}
+#bush {
+   background-image: url(assets/img/bush.png);
+   width: 56px;
+   height: 27px;
+   background-size: 56px 27px;
+   position: relative;
+   top: 26px;
+   left: 60px;/**/
+   margin: 0px 5px 0px 5px;
+   animation: bushMov 6s infinite linear;
+}
+
+@keyframes cactusMov {
+   0% {
+      left: 70px;
+   }
+   100% {
+      left: -250px;
+   }
+}
+
+@keyframes bushMov {
+   0% {
+      left: 60px;
+   }
+   100% {
+      left: -260px;
+   }
+}
+/*
+.jump {
+   animation: jump 0.5s  linear;
+}
+
+@keyframes jump {
+   0% {
+      top: 109px;
+   }
+   30% {
+      top: 80px;
+   }
+   50% {
+      top: 50px;
+   }
+   80% {
+      top: 80px;
+   }
+   100% {
+      top: 109px;
+   }
+   
+}*/
