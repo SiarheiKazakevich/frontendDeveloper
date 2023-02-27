@@ -213,6 +213,9 @@ h2 {
       margin-top: 2.5%;
       font-size: 14px;
    }
+   .date {
+      font-size: 13px;
+   }
    .fotosize {
       width: 86vw;
       height: auto;
