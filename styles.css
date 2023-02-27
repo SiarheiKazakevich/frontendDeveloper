@@ -205,6 +205,14 @@ h2 {
    }
 }
 @media (max-width: 650px) {
+   .place-time {
+      background-color: rgba(241, 89, 18, 0.0);
+      width: 140px;
+      height: 40px;
+      margin-right: 2%;
+      margin-top: 2.5%;
+      font-size: 14px;
+   }
    .fotosize {
       width: 86vw;
       height: auto;
