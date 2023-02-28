@@ -104,6 +104,27 @@ h2 {
 	margin-bottom: 1em;
 	font-size: 22px;
 }
+                     /*------------погода----------*/
+                     .weather-icon {
+                        font-size: 44px;
+                      }
+                      city::placeholder {  
+                        font-size: 20px;
+                        color: #e07006;
+                        opacity: .6;
+                      }    
+                      city {
+                        width: 170px;
+                        height: 34px;
+                        padding: 5px;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #ec6e07;  
+                        border: 0;
+                        outline: 0;
+                        border-bottom: 1px solid #fff;
+                        background-color: transparent;
+                      }          
 
 
 /*третий экран*/
@@ -214,7 +235,7 @@ h2 {
       font-size: 14px;
    }
    .date {
-      font-size: 13px;
+      font-size: 12px;
    }
    .fotosize {
       width: 86vw;
