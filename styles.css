@@ -77,6 +77,14 @@ A:active {
 	display: inline-block;
 	text-decoration: none;
 }
+.greeting-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  /* height: 20px;*/
+  color: #f56c11;
+
+}
 /*второй экран*/
 
 .fotosize {
@@ -215,7 +223,7 @@ h2 {
       width: 140px;
       height: 40px;
       margin-right: 1%;
-      margin-top: 2.5%;
+      margin-top: 1.5%;
       font-size: 13px;
    }
    .date {

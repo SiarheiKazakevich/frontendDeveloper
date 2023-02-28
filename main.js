@@ -46,6 +46,31 @@ setInterval(
    () => placeDate.textContent = showFullDate(), 1000
 );
 
+/*----2a) выводим приветствие------*/
+const placeWelcome = document.querySelector('.greeting');
+
+function showWelcome() {
+   let welcome;
+   const myDateWelcome = new Date();
+   const hour = myDateWelcome.getHours();
+
+   if (hour < 6) {
+      welcome = 'Good night ';
+   } else if (hour < 12) {
+      welcome = 'Good morning ';
+   } else if (hour < 18) {
+      welcome = 'Good afternoon ';
+   } else if (hour < 24) {
+      welcome = 'Good evening ';
+   } else {
+      welcome = 'hi';
+   };
+   return welcome;
+}
+setInterval(
+   () => placeWelcome.textContent = showWelcome(), 1000
+);
+
 
 /*---------------------погода------------------*/
 const weatherIcon = document.querySelector('.weather-icon');
