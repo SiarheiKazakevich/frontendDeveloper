@@ -126,5 +126,23 @@ if (animItems.length > 0) {
    setTimeout(() => {
       animOnScroll();
    }, 300);
-
 }
+
+/*--------исчезновение блоков--------*//**/
+/*
+gsap.fromTo('.ma', { opacity: 1 }, {
+   opacity: 0,
+   scrollTrigger: {
+      trigger: '.ma',
+      start: 'center',
+      end: '820',
+      scrub: true
+   }
+})*/
+
+let magic = document.querySelector('.page-header');
+let magicHeight = magic.offsetHeight;
+
+document.addEventListener('scroll', function () {
+   magic.style.opacity = 1 + window.scrollY / -magicHeight;
+})
