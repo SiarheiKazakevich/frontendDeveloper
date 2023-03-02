@@ -60,6 +60,24 @@ A:active {
 	text-align: center;
 	padding-top: 30px;
    color: #fff;
+  /* transform: translate(0px, 140%);
+   opacity: 0;
+   transition: all 0.8s ease 0s;*/
+}
+
+.fullscreen_title {
+   transform: translate(0px, 120%);
+   opacity: 0;
+   transition: all 0.8s ease 0s;
+}
+.fullscreen_title._active {
+   transform: translate(0px, 0px);
+   opacity: 1;
+}
+
+/*---приветствие-----*/
+.greeting-container {
+   height: 18px;
 }
 .boxnav {
 	padding-top: 70px;
