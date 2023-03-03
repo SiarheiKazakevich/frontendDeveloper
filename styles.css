@@ -31,8 +31,10 @@ h3 {
 	margin-left: 3%;
 	padding-top: 2%;
 }
-/*.mainscrin {
-}*/
+.myfoto2 {
+   width: 150px;
+   height: 150px;
+}
 
 ul {
 	list-style: none; /*убираем маркеры списка*/
@@ -134,10 +136,18 @@ h2 {
 	margin-bottom: 1em;
 	font-size: 22px;
 }
-                     /*------------погода----------
-                     .weather-icon {
-                        font-size: 44px;
-                      }*/
+.text-info {
+   display: flex;
+   /*white-space: nowrap*/
+   justify-content: center;
+   align-items: center;
+}
+.sizePhone {
+   font-size: 20px;
+}
+.bigWorld, a {
+   text-transform: capitalize;
+}
                            
 
 
@@ -156,7 +166,7 @@ h2 {
 	/*margin-left: 80px;*/
 }
 
-/*четвертый экран*/
+/*четвертый экран skills*/
 .skills {
 	width: 100%;
 	height: auto;
@@ -167,8 +177,9 @@ h2 {
 .skills li {
 	margin-bottom: 1em;
 	font-size: 22px;
+   line-height: 0.8em;
 }
-/*пятый экран*/
+/*пятый экран  jobs*/
 .code {
 	width: 100%;
 	height: auto;
@@ -181,6 +192,14 @@ h2 {
 .imgcode {
 	float: right;
 	/*margin-left: 80px;*/
+}
+.wraperbox {
+   text-align: center;
+   vertical-align: middle;
+}
+.correct-text1 {
+   display: inline-block;
+   margin-top: 5%;
 }
 /*шестой экран*/
 .experience {
@@ -233,6 +252,8 @@ h2 {
 	float: right;
 	/*margin-left: 80px;*/
 }
+/*-------styles of animations ---------------*/
+
 
 @media (min-width:650px) and (max-width: 790px) {
    .wraperbox {
@@ -242,6 +263,23 @@ h2 {
    }
 }
 @media (max-width: 650px) {
+   .h1 {
+      font-size: 35px;
+   }
+   .wrapermaintext {
+      height: 201px;
+   }
+   .foto {
+      float: left;
+      width: 150px;
+      margin-left: 0;
+      padding-top: 0;
+   }
+   .myfoto2 {
+      width: 150px;
+      height: 150px;
+      border-radius: 0 0 70px 0;
+   }
    .place-time {
       background-color: rgba(241, 89, 18, 0.0);
       width: 140px;
@@ -261,9 +299,12 @@ h2 {
       height: auto;
       max-height: 270px;
    }
-   .boxname {
-      /*display: flex;*/
+   .boxname,h1 {
+     font-size: 35px;
       margin: 0px 0px 0px 0px;
+   }
+   .main-text{
+      margin: 55px 0px 0px 0px;
    }
    .boxnav {
       padding: 0px 0px 0px 0px;

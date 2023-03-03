@@ -5,8 +5,10 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">-->
    <link href="styles.css" rel="stylesheet" type="text/css" />
    <link href="style2.css" rel="stylesheet" type="text/css" />
+   <link href="style3.css" rel="stylesheet" type="text/css" />
    <link rel="stylesheet" href="css/owfont-regular.css" />
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
@@ -17,7 +19,7 @@
    <header class="page-header" id="htmlid">
       <div class="wrapermaintext" id="contacts">
          <div class="foto">
-            <img src="assets/img/myfoto2.png" width="150" height="150" alt="fon">
+            <img class="myfoto2" src="assets/img/myfoto2.png" alt="fon">
          </div>
          <!-- вывод времени-->
          <div class="place-time">
@@ -28,7 +30,7 @@
          </div>
 
          <div class="boxname">
-            <H1 class="fullscreen_title _anim-items _anim-no-hide">Siarhei Kazakevich</H1>
+            <H1 class="fullscreen_title _anim-items _anim-no-hide main-text">Siarhei Kazakevich</H1>
             <!-- <h3>junior front-end developer</h3>-->
          </div>
       </div>
@@ -54,33 +56,40 @@
 
    <!-- блок инфо слева -->
    <aside class="boxcontacts">
-      <h2>Contacts</h2>
+      <div class="section-title element-animation">
+         <h2>Contacts</h2>
+      </div>
       <div class="wraperbox">
-         <div class="map">
+         <div class="map block-photo element-animation">
             <img class="fotosize" src="assets/img/map3.jpg" alt="fon">
          </div>
          <ul>
-            <li> <b>Location:</b><span class="city"> Minsk</span>, Belarus: <span class="temperature" id="temperature">
+            <li class="block-title element-animation"> <b>Location:</b><span class="city"> Minsk</span>, Belarus: <span
+                  class="temperature" id="temperature">
                </span><i class="weather-icon owf"></i></li>
-            <li> <b>Phone:</b><a href="tel:+375291555973"> +375 29 155-59-73 </a><img class="viber"
-                  src="assets/img/Viber1.svg" width="20" height="20" alt="fon"> </li>
-            <li> <b>Email:</b> dianrom@tut.by </li>
-            <li> <b>GitHub:</b><a href="https://github.com/SiarheiKazakevich"> SiarheiKazakevich </a></li>
+            <li class="text-info block-title element-animation"> <b>Phone:</b><a class="sizePhone"
+                  href="tel:+375291555973">+37529 155-59-73
+               </a><img class="viber" src="assets/img/Viber1.svg" width="20" height="20" alt="fon"></li>
+            <li class="block-title element-animation"> <b>Email:</b> dianrom@tut.by </li>
+            <li class="block-title element-animation bigWorld"> <b>LinkedIn:</b><a
+                  href="https://www.linkedin.com/feed/">
+                  Siarhei Kazakevich </a></li>
          </ul>
       </div>
    </aside>
    <!-- конец левого блока-->
    <section class="info" id="info">
-      <h2>Info about Me</h2>
-
+      <div class="section-title element-animation">
+         <h2>Info about Me</h2>
+      </div>
       <div class="wraperbox">
-         <div class="imgaboutme target" id="target">
+         <div class="imgaboutme target gallery-right block-photo element-animation" id="target">
             <img class="fotosize" src="assets/img/aboutMe.jpg" alt="fon" data-angle="0">
          </div>
          <ul>
-            <li> <b>Year of birth:</b> 10.09.1983 </li>
-            <li> <b>Marital status:</b> married </li>
-            <li> <b>Сhildren:</b> 2 </li>
+            <li class="block-title element-animation"> <b>Year of birth:</b> 10.09.1983 </li>
+            <li class="block-title element-animation"> <b>Marital status:</b> married </li>
+            <li class="block-title element-animation"> <b>Сhildren:</b> 2 </li>
          </ul>
       </div>
       <!--<div class="">
@@ -89,73 +98,86 @@
    </section>
    <!---->
    <section class="skills" id="skills">
-      <h2>Skills</h2>
+      <div class="section-title element-animation">
+         <h2>Skills</h2>
+      </div>
       <div class="wraperbox">
-         <div class="map">
+         <div class="map gallery-right block-photo element-animation">
             <img class="fotosize" src="assets/img/skills.jpg" alt="fon">
          </div>
          <ul>
-            <li> <b>-</b> HTML, CSS, SASS</li>
-            <li> <b>-</b> Photoshop, Figma </li>
-            <li> <b>-</b> JavaScript </li>
-            <li> <b>-</b> React </li>
-            <li> <b>-</b> Git </li>
-            <li> <b>-</b> Webpack </li>
+            <li class="block-title element-animation"> <b>-</b> HTML, CSS, SASS</li>
+            <li class="block-title element-animation"> <b>-</b> Photoshop, Figma </li>
+            <li class="block-title element-animation"> <b>-</b> JavaScript </li>
+            <li class="block-title element-animation"> <b>-</b> React </li>
+            <li class="block-title element-animation"> <b>-</b> Git </li>
+            <li class="block-title element-animation"> <b>-</b> Webpack </li>
 
          </ul>
       </div>
    </section>
    <!---->
    <section class="code" id="code">
-      <h2>My jobs</h2>
-
+      <div class="section-title element-animation">
+         <h2>My jobs</h2>
+      </div>
       <div class="wraperbox">
-         <div class="imgcode">
+         <div class="imgcode block-photo element-animation">
             <img class="fotosize" src="assets/img/job.png" alt="fon">
          </div>
-         <ul>
-            <li> <b>2006-2007:</b><a href="https://www.savushkin.com/en/"> processing shop foreman </a></li>
-            <li> <b>2007-2019:</b><a href="http://zapchasti-nekrasova.by/"> auto parts sales manager </a></li>
-            <li> <b>2019-today:</b><a href="https://baltictransline.lt/"> truck driver </a></li>
+         <ul class="correct-text1">
+            <li class="block-title element-animation"> <b>GitHub:</b><a href="https://github.com/SiarheiKazakevich">
+                  SiarheiKazakevich </a></li>
+            <!--<li class="block-title element-animation"> <b>2006-2007:</b><a href="https://www.savushkin.com/en/">
+                  processing shop foreman </a></li>
+            <li class="block-title element-animation"> <b>2007-2019:</b><a href="http://zapchasti-nekrasova.by/"> auto
+                  parts sales manager </a></li>
+            <li class="block-title element-animation"> <b>2019-today:</b><a href="https://baltictransline.lt/"> truck
+                  driver </a></li>-->
          </ul>
       </div>
    </section>
    <!---->
    <section class="experience" id="experience">
-      <h2>Hobby</h2>
-
+      <div class="section-title element-animation">
+         <h2>Hobby</h2>
+      </div>
       <div class="wraperbox">
-         <div class="imgexperience">
+         <div class="imgexperience block-photo element-animation">
             <img class="fotosize" src="assets/img/hobbby.png" alt="fon">
          </div>
          <ul class="machins">
-            <li><b>motorcicles,cars,trucks :</b><br>
+            <li class="block-title element-animation"><b>travel :</b>
                <div class="game">
                   <div id="cactus"></div>
                   <div id="bush"></div>
-                  <div id="dino"></div>
-                  <div id="littletruck"></div>
+                  <!-- <div id="dino"></div>
+                  <div id="littletruck"></div>  <br>-->
                   <div id="car"></div>
                   <div id="motorcicle"></div>
                </div>
             </li>
-            <li><b>travel :</b><a href="HTTPS://WWW.INSTAGRAM.COM/_SIARHEI_KAZAKEVICH_/"> My instagram</a></li>
+            <li class="block-title element-animation"><b>discoveries :</b><a
+                  href="HTTPS://WWW.INSTAGRAM.COM/_SIARHEI_KAZAKEVICH_/"> My instagram</a></li>
          </ul>
       </div>
 
    </section>
    <!---->
    <section class="education" id="education">
-      <h2>Education</h2>
-
+      <div class="section-title element-animation">
+         <h2>Education</h2>
+      </div>
       <div class="wraperbox">
-         <div class="imgeducation">
+         <div class="imgeducation block-photo element-animation">
             <img class="fotosize" src="assets/img/education.jpg" alt="fon">
          </div>
          <ul>
-            <li><b>2001-2006 University:</b> <a href="https://bgut.by/">State University<br>
+            <li class="block-title element-animation"><b>2001-2006 University:</b> <a href="https://bgut.by/">State
+                  University<br>
                   of Food and Chemical Technologies</a></li>
-            <li><b>2006-2011 University:</b> <a href="https://www.pac.by/">Academy of Management<br>
+            <li class="block-title element-animation"><b>2006-2011 University:</b> <a href="https://www.pac.by/">Academy
+                  of Management<br>
                   under the President of the Republic of Belarus</a></li>
          </ul>
       </div>
@@ -163,15 +185,16 @@
    </section>
    <!---->
    <section class="english">
-      <h2>English</h2>
-
+      <div class="section-title element-animation">
+         <h2>English</h2>
+      </div>
       <div class="wraperbox">
-         <div class="imgenglish">
+         <div class="imgenglish block-photo element-animation">
             <img class="fotosize" src="assets/img/english.jpg" alt="fon">
          </div>
          <ul>
-            <li><b>A2.</b> I am currently studying and improve my english.</li>
-            <li><a href="https://www.duolingo.com/learn"> Duolingo</a></li>
+            <li class="block-title element-animation"><b>A2.</b> I am currently studying and improve my english.</li>
+            <li class="block-title element-animation"><a href="https://www.duolingo.com/learn"> Duolingo</a></li>
          </ul>
       </div>
 

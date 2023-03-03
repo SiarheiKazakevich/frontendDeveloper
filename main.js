@@ -146,3 +146,38 @@ let magicHeight = magic.offsetHeight;
 document.addEventListener('scroll', function () {
    magic.style.opacity = 1 + window.scrollY / -magicHeight;
 })
+
+/*---------выплывание справа--------*/
+/*
+let itemsR = gsap.utils.toArray('.gallery-right')
+
+itemsR.array.forEach(item => {
+   gsap.fromTo(item, { x: 50, opacity: 0 }, {
+      opacity: 1, x: 0,
+      scrollTrigger: {
+         trigger: item,
+         start: '-850',
+         end: '-100',
+         scrub: true
+      }
+   })
+});*/
+
+
+function onEntry(entry) {
+   entry.forEach(change => {
+      if (change.isIntersecting) {
+         change.target.classList.add('element-show');
+      }
+   });
+}
+
+let options = {
+   threshold: [0.5]
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+for (let elm of elements) {
+   observer.observe(elm);
+}
