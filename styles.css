@@ -264,7 +264,7 @@ h2 {
 }
 @media (max-width: 650px) {
    .h1 {
-      font-size: 35px;
+      font-size: 30px;
    }
    .wrapermaintext {
       height: 201px;
@@ -300,7 +300,7 @@ h2 {
       max-height: 270px;
    }
    .boxname,h1 {
-     font-size: 35px;
+     font-size: 30px;
       margin: 0px 0px 0px 0px;
    }
    .main-text{
