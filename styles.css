@@ -42,14 +42,16 @@ ul {
 	padding-left: 0; /*убираем левый отступ, равный 40px*/
 }
 a {
-	/*text-decoration: none;*/
-	text-transform: lowercase;
+	text-decoration: none;/**/
+	
 	color: rgb(43, 41, 41); /*убираем подчеркивание текста ссылок*/
 }
 
   a:hover {
-   background: #f56c11; /* Цвет фона под ссылкой */ 
-   color: #ffe; /* Цвет ссылки */ 
+   /* background: #f56c11; Цвет фона под ссылкой */ 
+   color: #f56c11; /* Цвет ссылки */ 
+   font-weight: bold;
+   text-decoration: underline #06a54d;
   }
 A:active {
 	color: #be592a; /* Цвет активных ссылок */
