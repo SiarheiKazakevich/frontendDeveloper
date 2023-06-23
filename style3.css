@@ -18,8 +18,26 @@
    -ms-transform: translateY(0);
    transform: translateY(0);
 }
+/*---------------------тень заголовков----------*/
+
+.strokeMain {
+   /*font: bold 3em Arial, sans-serif;*/
+   /*font: bold;
+   color: #02070e;*/
+   text-shadow: #c9cbcc 1px 1px 0, #c9cbcc 2px 2px 0, 
+                #c9cbcc 3px 3px 0, #c9cbcc 4px 4px 0, 
+                #c9cbcc 5px 5px 0;
+  }
 
 
+.stroke {
+   /*font: bold 3em Arial, sans-serif;*/
+   font: bold;
+   color: #02070e;
+   text-shadow: #c9cbcc 1px 1px 0, #c9cbcc 2px 2px 0, 
+                #c9cbcc 3px 3px 0, #c9cbcc 4px 4px 0, 
+                #c9cbcc 5px 5px 0;
+  }
 /*------------------картинки/images-------------------*/
 
 .block-photo.element-animation {
